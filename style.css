@@ -72,3 +72,54 @@ footer {
   border-radius: 15px;
   object-fit: cover;
 }
+
+/* Styles pour Menu */
+.menu-section {
+  padding: 40px 30px;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.menu-item {
+  background: #222;
+  padding: 20px;
+  border-radius: 20px;
+}
+.menu-item .price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Styles pour Réservation */
+.reservation-section {
+  padding: 40px 30px;
+  background: #1c1c1c;
+}
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+.reservation-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.reservation-form input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+.reservation-form .btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 15px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
