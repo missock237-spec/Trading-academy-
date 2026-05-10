@@ -1,57 +1,74 @@
 body {
-background: #111;
-color: white;
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .hero {
-padding: 60px 30px;
-background: #1c1c1c;
+  padding: 60px 30px;
+  background: #1c1c1c;
 }
 
 nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .btn {
-background: white;
-color: black;
-padding: 10px 20px;
-text-decoration: none;
-border-radius: 20px;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
 }
 
 .hero-content {
-margin-top: 80px;
-max-width: 600px;
+  margin-top: 80px;
+  max-width: 600px;
 }
 
 .hero-content h2 {
-font-size: 48px;
+  font-size: 48px;
 }
 
 .badge {
-background: #333;
-padding: 10px;
-border-radius: 10px;
+  background: #333;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .info {
-padding: 40px 30px;
+  padding: 40px 30px;
 }
 
 .card {
-background: #222;
-padding: 20px;
-border-radius: 20px;
+  background: #222;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 footer {
-text-align: center;
-padding: 20px;
-background: black;
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
+
+.gallery {
+  padding: 40px 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
 }
