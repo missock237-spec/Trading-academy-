@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - Restaurant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="admin-login" id="loginBox">
+  <h2>Accès Administrateur</h2>
+  <input type="password" id="password" placeholder="Mot de passe">
+  <button onclick="login()">Connexion</button>
+</div>
+
+<div class="admin-panel hidden" id="adminPanel">
+  <h2>Ajouter un plat</h2>
+  <input type="text" id="dishName" placeholder="Nom du plat">
+  <input type="text" id="dishDesc" placeholder="Description">
+  <input type="number" id="dishPrice" placeholder="Prix">
+  <input type="file" id="dishImage" accept="image/*">
+  <button onclick="addDish()">Ajouter</button>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
